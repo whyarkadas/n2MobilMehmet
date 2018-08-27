@@ -6,5 +6,5 @@ from django.utils import timezone
 
 class Vehicle(models.Model):
     plate_number = models.CharField(max_length=200)
-    register_date = models.DateTimeField('date published')
+    register_date = models.CharField(max_length=60)
     brand= models.CharField(max_length=100)
